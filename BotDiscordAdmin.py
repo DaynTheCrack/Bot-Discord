@@ -1,11 +1,17 @@
+"""
+Dans un premier temps pour accéder aux imports ci-dessous il faut télécharger les bibliothèques...
+De ce fait pour ceux qui sont sur Windows --> Téléchargement automatique avec la commande : py -3 -m pip install -U discord.py (depuis un invite de commande CMD)
+Pour ceux qui sonr sur Linux/MacOs --> Téléchargement automatique avec la commande : python3 -m pip install -U discord.py (depuis un terminal)
+Enfin si votre IDE était déjà ouvert pendant le téléchargement des packages relancer le !
+"""
 import discord
-from discord.ext import commands
+from discord.ext import commands #import des bibliothèques Commande/Bot
 
-bot = commands.Bot(command_prefix="!",description="Bot d'administration")
+bot = commands.Bot(command_prefix="!",description="Bot d'administration") #définition du préfix de la commande par exemple dans le cas actuel pour éxécuter une commande il faudra commencer avec "!"
 
-@bot.event
+@bot.event #Event qui permet de retourner une fonction def dans l'invite de commande ou le terminal mais pas sur le Discord
 async def on_ready():
-    print("Ready!")
+    print("En fonction!") #retourne la chaine "En fonction" pour dire que le bot discord est actif PS: Facultatif
 @bot.command()
 async def commande(ctx):
     serverName = "Leonidas"
@@ -48,4 +54,4 @@ async def bans(ctx):
     await ctx.send("\n".join(ids))
 
 
-bot.run("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX") #python C:\JetBrains\BotDiscord\BotDiscordAdmin.py
+bot.run("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX") #Token discord
