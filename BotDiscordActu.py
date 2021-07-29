@@ -1,3 +1,9 @@
+"""
+Dans un premier temps pour accéder aux imports ci-dessous il faut télécharger les bibliothèques...
+De ce fait pour ceux qui sont sur Windows --> Téléchargement automatique avec la commande : py -3 -m pip install -U discord.py (depuis un invite de commande CMD)
+Pour ceux qui sonr sur Linux/MacOs --> Téléchargement automatique avec la commande : python3 -m pip install -U discord.py (depuis un terminal)
+Enfin si votre IDE était déjà ouvert pendant le téléchargement des packages relancer le !
+"""
 import discord
 from discord.ext import commands
 
