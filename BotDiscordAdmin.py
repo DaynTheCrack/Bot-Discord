@@ -54,5 +54,5 @@ async def bans(ctx):
     await ctx.send("\n".join(ids))
 
 
-bot.run("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX") #Token discord renségné sur le site : https://discord.com/developers/applications
+bot.run("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX") #Token discord renseigné sur le site : https://discord.com/developers/applications
 #/!\ ne jamais donner son token discord 
